@@ -6,9 +6,9 @@ const app = express()
 const config = require('./webpack.config')
 const compiler = webpack(config)
 
-//tell express to use webpack-dev-middleware an webpack.config.js
+//tell express to use webpack-dev-middleware and webpack.config.js
 app.use(webpackDevMiddleware(compiler, {
-    publicPath: config.output.publicPath
+    publicPath: '/'
 }))
 
 //serve the files on port 3000
