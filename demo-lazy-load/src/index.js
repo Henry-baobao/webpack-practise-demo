@@ -14,7 +14,7 @@ function component() {
         let print = module.default;
 
         print();
-    })
+    });
 
     return element;
 }
